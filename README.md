@@ -37,3 +37,4 @@
    會窮舉所有的moving plan，找出最小的moving distance，該距離即為Wasserstein distance
 4. 計算Wasserstein distance的好處： 可以觀察到Generator表現越來越好，解決了JS Divergence帶來的問題
 
+### Evaluation of GAN and Conditional GAN
