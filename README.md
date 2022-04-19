@@ -37,4 +37,16 @@
    會窮舉所有的moving plan，找出最小的moving distance，該距離即為Wasserstein distance
 4. 計算Wasserstein distance的好處： 可以觀察到Generator表現越來越好，解決了JS Divergence帶來的問題
 
-### Evaluation of GAN and Conditional GAN
+## Evaluation of GAN and Conditional GAN
+1. 拿GAN來生成一段文字其實是最困難的！
+### 如何去盼對現在的Generator是好或差呢？
+1. Mode Collapse: train到後來發現generator只會產生某幾種結果
+
+   為何會發生Mode Collapse？
+   
+   Generator發現了Discriminator的盲點，發現Discriminator在某些結果下無法去判斷真偽
+2. FID
+
+   假設真實的圖片與產生出來的圖片，他們都是高斯分佈，然後再去計算兩個分佈之間的FID，距離越小代表兩組圖片越接近、品質越高
+   
+### Conditional generation
