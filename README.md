@@ -51,3 +51,18 @@
    
 ### Conditional generation
 1. Discriminator要多一個input(condition)
+
+## CycleGAN
+### 把GAN用在un-supervised learning上
+1. 如何強化generator的input與output之間的關係呢？
+
+   在Conditional GAN的時候有遇到類似的問題！但無法直接套用，因為在Conditional GAN中有成對的資料，但現在我們沒有成對的資料～
+   
+   -> Cycle GAN (Train兩個generators)
+2. Cycle GAN
+
+   經過兩次Generators的轉換之後，希望輸入跟輸出的結果越接近越好！
+
+   Cycle GAN可以強迫Generator輸出的y domain的圖片跟輸入的x domain的圖片有一些關係！(但如何確認這個關係是我們要的？機器有沒有可能train到很奇怪的關係？)
+   
+   經過兩次Generators的轉換之後，希望輸入跟輸出的結果越接近越好！
