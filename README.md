@@ -50,3 +50,4 @@
    假設真實的圖片與產生出來的圖片，他們都是高斯分佈，然後再去計算兩個分佈之間的FID，距離越小代表兩組圖片越接近、品質越高
    
 ### Conditional generation
+1. Discriminator要多一個input(condition)
